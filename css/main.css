@@ -1,0 +1,6 @@
+*{ margin:0;padding:0;}
+html{font:150%/1.5 Arial, Helvetica, sans-serif;}
+body{background-color:#CC6600;margin:0.15em;}
+h1{font-size:100%;padding:2%;background-color:#999; text-transform:capitalize;}
+.griditem:hover{-webkit-transform: rotate3d(0, 0, 1, 15deg);}
+
