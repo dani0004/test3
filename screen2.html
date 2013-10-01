@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <div data-bb-type="screen" id="screen2" data-bb-effect="fade" >
   <div data-bb-type="title" id="divTitle" data-bb-caption=" " > </div>
-	<div data-bb-type="grid-layout" data-bb-context="true" >
-      	<div data-bb-type="group" >
-        <div data-bb-type="row">
-              <div data-role="image" class="griditem" data-bb-type="item" data-id="image1" data-bb-img="images/beside.png"  onclick="showDetails('farmhouse')"></div> 
+	<div id="grid1" data-bb-type="grid-layout" data-bb-context="true" >
+      	<div id="group1" data-bb-type="group" >
+        <div id="row1" data-bb-type="row">
+              <div data-role="image" class="griditem" data-bb-type="item" data-id="image1" data-bb-img="images/image1.png"   onclick="showDetails('farmhouse')" ></div> 
               <div data-bb-type="item" class="griditem" data-id="image2" data-bb-img="images/image2.png"    onclick="showDetails('riverside')" ></div> 
                <div data-bb-type="item" class="griditem" data-id="image3" data-bb-img="images/image3.png"  onclick="showDetails('remicRapids')"></div> 
           </div>
@@ -23,13 +23,25 @@
           
     	</div>  
   </div>
+  
+   <div id="grid2" data-bb-type="grid-layout"  >
+  <div data-bb-type="row">
+  
+          </div>
+   <div data-bb-type="row">
+           Under Construction
+          </div> 
+ 
+       
+  </div>
+  
   <div data-bb-type="context-menu" id="screen2ctx" >
       <div data-bb-type="action" class="griditem" data-bb-img="local:///images/gearwheel.png" onclick="showMap()" >Map</div>
-      <div data-bb-type="action" class="griditem" data-bb-img="local:///images/gearwheel.png" data-bb-visible="true" onclick="showDetails('remicRapids')" >Details</div>
-       <div data-bb-type="action" class="griditem" data-bb-img="local:///images/gearwheel.png" onclick="hide();">Hide</div>
+      <div data-bb-type="action" class="griditem" data-bb-img="local:///images/gearwheel.png" data-bb-visible="true" onclick="showContext()" >Details</div>
+       <div data-bb-type="action" class="griditem" data-bb-img="local:///images/gearwheel.png" onclick="hideItem();">Hide</div>
   </div>
-  <div data-bb-type="action-bar">
-      <div data-bb-type="action" data-bb-img="images/farmhouse.png" data-bb-style="tab" data-bb-overflow="false" onclick="addTab('history')">History</div>
-      <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/humming.png" data-bb-selected="true" onclick="addTab('farm')">Nature</div>    
+  <div id="abar" data-bb-type="action-bar">
+      <div id-"tab1" data-bb-type="action" data-bb-img="images/farmhouse.png" data-bb-style="tab" data-bb-overflow="false" onclick="addTab('history')">History</div>
+      <div id="tab2" data-bb-type="action" data-bb-style="tab" data-bb-img="images/humming.png" data-bb-selected="true" onclick="addTab('farm')">Nature</div>    
   </div>
 	</div>
